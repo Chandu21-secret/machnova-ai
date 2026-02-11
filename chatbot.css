@@ -352,3 +352,10 @@ body {
   100% { content: '...'; }
 }
 
+
+@media (max-width: 600px) {
+  .chat-float-btn {
+    display: none;
+  }
+}
+

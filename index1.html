@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Machnova AI Chatbot</title>
+  <link rel="stylesheet" href="chatbot.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- Floating Button -->
+<div class="chat-float-btn" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chat Box -->
+<div class="chat-container" id="chatBox">
+  <div class="chat-header">
+    🤖 Machnova AI
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chat-body" id="messages">
+    <div class="bot-msg">
+      Hello 👋<br>
+      Ask me anything about <b>Machnova Machines</b>
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input type="text" id="msg" placeholder="Type your message..." onkeydown="handleEnter(event)" />
+
+    <button onclick="send()">➤</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

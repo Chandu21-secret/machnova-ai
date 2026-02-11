@@ -82,7 +82,6 @@ async function send() {
   const text = input.value.trim();
   if (!text) return;
 
-  // user message
   const userDiv = document.createElement("div");
   userDiv.className = "user-msg";
   userDiv.innerText = text;
@@ -90,7 +89,6 @@ async function send() {
 
   input.value = "";
 
-  // typing indicator
   const typing = document.createElement("div");
   typing.className = "bot-msg";
   typing.innerText = "typing...";
@@ -98,19 +96,18 @@ async function send() {
   messages.scrollTop = messages.scrollHeight;
 
   try {
-    const res = await fetch("https://machnova-ai-2.onrender.com", {
+    const res = await fetch("https://machnova-ai-2.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: userMessage })
+      body: JSON.stringify({ message: text })
     });
 
     const data = await res.json();
     typing.remove();
 
-    // bot reply (IMPORTANT PART)
     const botDiv = document.createElement("div");
     botDiv.className = "bot-msg";
-    botDiv.innerHTML = formatReply(data.reply); // 👈 MUST be innerHTML
+    botDiv.innerHTML = formatReply(data.reply);
     messages.appendChild(botDiv);
 
     messages.scrollTop = messages.scrollHeight;
@@ -123,6 +120,7 @@ async function send() {
     messages.appendChild(errDiv);
   }
 }
+
 
 
 function handleEnter(e) {

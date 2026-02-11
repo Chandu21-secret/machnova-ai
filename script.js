@@ -101,7 +101,7 @@ async function send() {
     const res = await fetch("https://machnova-ai-2.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text })
+      body: JSON.stringify({ message: userMessage })
     });
 
     const data = await res.json();

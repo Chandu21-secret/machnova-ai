@@ -8,6 +8,8 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.static(__dirname));
+
 
 // OpenAI client
 const openai = new OpenAI({
@@ -16,8 +18,9 @@ const openai = new OpenAI({
 
 
 app.get("/", (req, res) => {
-  res.send("Machnova AI Backend is running 🚀");
+  res.sendFile(__dirname + "/index.html");
 });
+
 
 
 

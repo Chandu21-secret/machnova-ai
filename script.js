@@ -98,7 +98,7 @@ async function send() {
   messages.scrollTop = messages.scrollHeight;
 
   try {
-    const res = await fetch("http://localhost:3000/chat", {
+    const res = await fetch("https://machnova-ai-2.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: text })

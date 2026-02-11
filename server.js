@@ -14,6 +14,13 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
+
+app.get("/", (req, res) => {
+  res.send("Machnova AI Backend is running 🚀");
+});
+
+
+
 // ================= CHAT API =================
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
@@ -164,7 +171,7 @@ https://drive.google.com/file/d/1GTwnPT4WQrBPsA344Nj3bPOl-m9h4wEf/view?usp=shari
 });
 
 // ================= START SERVER =================
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ AI Server running at http://localhost:${PORT}`);
 });

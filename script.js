@@ -132,43 +132,17 @@ function handleEnter(e) {
 
 function formatReply(text) {
 
+  // Remove any unwanted HTML tags
   text = text.replace(/<[^>]*>/g, "");
 
   const urlRegex = /(https?:\/\/[^\s]+)/g;
 
   return text.replace(urlRegex, (url) => {
 
-    // Google Drive handling
-    if (url.includes("drive.google.com")) {
-
-      let fileId = null;
-
-      // Match /d/FILE_ID/
-      const match1 = url.match(/\/d\/([^\/\?]+)/);
-      if (match1 && match1[1]) {
-        fileId = match1[1];
-      }
-
-      // Match id=FILE_ID
-      const match2 = url.match(/id=([^&]+)/);
-      if (!fileId && match2 && match2[1]) {
-        fileId = match2[1];
-      }
-
-      if (fileId) {
-        const directImage = `https://drive.google.com/uc?export=view&id=${fileId}`;
-
-        return `
-          <div style="margin-top:8px;">
-            <img src="${directImage}" 
-                 style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.2);" />
-          </div>
-        `;
-      }
-    }
-
-    // Normal link
-    return `<a href="${url}" target="_blank">${url}</a>`;
+    // Always return clickable link (no image rendering)
+    return `<a href="${url}" target="_blank" style="color:#2575fc; font-weight:600; word-break:break-all;">
+              ${url}
+            </a>`;
   });
 }
 

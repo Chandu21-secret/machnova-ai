@@ -131,19 +131,37 @@ function handleEnter(e) {
 
 
 function formatReply(text) {
-  // 1️⃣ Remove any HTML tags completely
+
+  // Remove HTML tags
   text = text.replace(/<[^>]*>/g, "");
 
-  // 2️⃣ Remove broken anchor leftovers like: target="_blank" rel="..."
-  text = text.replace(/target="_blank"|rel="noopener noreferrer"|href=/g, "");
-
-  // 3️⃣ Convert ONLY clean URLs to clickable links
-  const urlRegex = /(https?:\/\/[a-zA-Z0-9./?=_-]+)/g;
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
 
   return text.replace(urlRegex, (url) => {
-    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+
+    // If Google Drive link
+    if (url.includes("drive.google.com")) {
+
+      const match = url.match(/\/d\/(.*?)\//);
+
+      if (match && match[1]) {
+        const fileId = match[1];
+        const directImage = `https://drive.google.com/uc?export=view&id=${fileId}`;
+
+        return `
+          <div style="margin-top:8px;">
+            <img src="${directImage}" 
+                 style="max-width:100%; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.2);" />
+          </div>
+        `;
+      }
+    }
+
+    // Normal links
+    return `<a href="${url}" target="_blank">${url}</a>`;
   });
 }
+
 
 
 

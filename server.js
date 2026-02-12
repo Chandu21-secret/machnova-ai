@@ -130,15 +130,15 @@ https://www.amazon.in/Mechnova-208cc-Power-Tiller-Solid/dp/B0GFX7BWVC
 
 Product Image:
 
-Brushcutter	(MBC37SC)- 1.35 HP : https://drive.google.com/uc?export=view&id=1j9moRzxVKdItvl-tHW4UQy_EE54HQKfu
-Brushcutter	(MBC37SBC)-1.35 HP: https://drive.google.com/uc?export=view&id=1DIIq8HawHxTc21IgzfLivRmEsxMxrgNZ
-Gasoline Water Pump	(MWP1.5X1.5SA)- 4 HP: https://drive.google.com/uc?export=view&id=1iPeU7200AI_9FlHkym9eKIc8NB9hfDbb
-Gasoline Water Pump	(MWP3X3SA)- 7 HP: https://drive.google.com/uc?export=view&id=1Eo7CefcAt3gr-bqBBIQJBpn6G9sLPnFt
-Gasoline Chainsaw	(MCS58A-22SN)- 3.2 HP: https://drive.google.com/uc?export=view&id=1myWhn3-GSz6dGMD0cY-JhG2AK6jOAZcc
-Gasoline Engine	(ME30A)- 4 HP: https://drive.google.com/uc?export=view&id=1nlZl4pDkN2WOumUisFmkbCENCPRdZf0E
-Gasoline Engine	(ME70A)- 7 HP: https://drive.google.com/uc?export=view&id=1_L_4va9Jv-47pbUnJQHH-MsKWhE3gLBt
-Power Weeder	(MT900GA-208CC)- 7 HP: https://drive.google.com/uc?export=view&id=1Isfe7-wQXpVsgl0PubDejlrUX63DEpjs
-Power Weeder (MT900GA1-208CC)- 7 HP: https://drive.google.com/uc?export=view&id=1MzzQi0CCHx0FIBUdnBCa87-xoQzwmHBm
+Brushcutter	(Model-MBC37SC)- 1.35 HP : https://drive.google.com/uc?export=view&id=1j9moRzxVKdItvl-tHW4UQy_EE54HQKfu
+Brushcutter	(Model- MBC37SBC)-1.35 HP: https://drive.google.com/uc?export=view&id=1DIIq8HawHxTc21IgzfLivRmEsxMxrgNZ
+Gasoline Water Pump	(Model-MWP1.5X1.5SA)- 4 HP: https://drive.google.com/uc?export=view&id=1iPeU7200AI_9FlHkym9eKIc8NB9hfDbb
+Gasoline Water Pump	(Model-MWP3X3SA)- 7 HP: https://drive.google.com/uc?export=view&id=1Eo7CefcAt3gr-bqBBIQJBpn6G9sLPnFt
+Gasoline Chainsaw	(Model MCS58A-22SN)- 3.2 HP: https://drive.google.com/uc?export=view&id=1myWhn3-GSz6dGMD0cY-JhG2AK6jOAZcc
+Gasoline Engine	(Model-ME30A)- 4 HP: https://drive.google.com/uc?export=view&id=1nlZl4pDkN2WOumUisFmkbCENCPRdZf0E
+Gasoline Engine	(Model-ME70A)- 7 HP: https://drive.google.com/uc?export=view&id=1_L_4va9Jv-47pbUnJQHH-MsKWhE3gLBt
+Power Weeder	(Model-MT900GA-208CC)- 7 HP: https://drive.google.com/uc?export=view&id=1Isfe7-wQXpVsgl0PubDejlrUX63DEpjs
+Power Weeder (Model-MT900GA1-208CC)- 7 HP: https://drive.google.com/uc?export=view&id=1MzzQi0CCHx0FIBUdnBCa87-xoQzwmHBm
 
 
 

@@ -12,7 +12,7 @@ app.use(express.static(__dirname));
 
 // ================= MEMORY STORAGE =================
 const userSessions = {};
-const MAX_HISTORY = 12;
+const MAX_HISTORY = 6;
 
 // OpenAI Client
 const openai = new OpenAI({
@@ -52,7 +52,8 @@ app.post("/chat", async (req, res) => {
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
-      temperature: 0.6,
+      temperature: 0.4,
+      max_tokens: 500,
       messages: [
         {
           role: "system",
@@ -63,7 +64,7 @@ You behave like a real human sales & support executive.
 SMART SALES ENGINE RULE:
 - If user asks for general farming machine help, first ask clarifying question.
 - Understand user's use case: We offer a wide range of agricultural machinery, including chainsaws, gasoline water pumps,
-  engines, brush cutters (bike pack and side pack), and power weeders.
+  engines, brush cutters (back pack and side back pack), and power weeders.
 - Recommend best suitable Machnova product with short explanation.
 - Always explain WHY that product fits their need.
 - Guide user toward buying decision politely.
@@ -168,17 +169,20 @@ https://drive.google.com/file/d/1JFGpEDyUwaFDl6WYyHltttSZu4hJvttA/view
     });
 
     if (userSessions[userId].length > MAX_HISTORY) {
-      userSessions[userId].shift();
-    }
+     userSessions[userId] = userSessions[userId].slice(-MAX_HISTORY);
+}
+
 
     res.json({ reply: aiReply });
 
   } catch (error) {
-    console.error("AI ERROR:", error.message);
-    res.status(500).json({
-      reply: "Sorry, something went wrong. Please try again."
-    });
-  }
+  console.error("FULL AI ERROR:", error);
+
+  res.status(200).json({
+    reply: "Server is temporarily busy. Please try again."
+  });
+}
+
 });
 
 // ================= START SERVER =================

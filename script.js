@@ -63,9 +63,6 @@ function handleEnter(e) {
 
 function formatReply(text) {
 
-  // Convert markdown bold **text** to HTML bold
-  text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-
   const urlRegex = /(https?:\/\/[^\s]+)/g;
 
   return text.replace(urlRegex, (url) => {

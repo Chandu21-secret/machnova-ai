@@ -198,14 +198,13 @@ State- Tamilnadu
       ]
     });
 
-    const aiReply = completion.choices[0].message.content;
+    let aiReply = completion.choices[0].message.content;
 
-    // Save AI reply
-    userSessions[userId].push({
-      role: "assistant",
-      content: aiReply
-    });
-
+// Auto bold only model codes
+    aiReply = aiReply.replace(
+     /(MBC37SC|MBC37SBC|MT900GA|MT900GA1)/g,
+     "<strong>$1</strong>"
+);
     if (userSessions[userId].length > MAX_HISTORY) {
      userSessions[userId] = userSessions[userId].slice(-MAX_HISTORY);
 }

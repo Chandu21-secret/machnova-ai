@@ -1,4 +1,3 @@
-
 // CHAT LOGIC
 
 function toggleChat() {
@@ -13,6 +12,7 @@ async function send() {
   const text = input.value.trim();
   if (!text) return;
 
+  // User message
   const userDiv = document.createElement("div");
   userDiv.className = "user-msg";
   userDiv.innerText = text;
@@ -20,6 +20,7 @@ async function send() {
 
   input.value = "";
 
+  // Typing indicator
   const typing = document.createElement("div");
   typing.className = "bot-msg";
   typing.innerText = "typing...";
@@ -27,11 +28,28 @@ async function send() {
   messages.scrollTop = messages.scrollHeight;
 
   try {
-    const res = await fetch("https://machnova-ai-2.onrender.com/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text })
-    });
+    let res;
+
+    // 🔥 Retry logic (3 attempts)
+    for (let i = 0; i < 3; i++) {
+      try {
+        res = await fetch("https://machnova-ai-2.onrender.com/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: text })
+        });
+
+        if (!res.ok) {
+          throw new Error("Server error");
+        }
+
+        break; // success → exit loop
+
+      } catch (error) {
+        if (i === 2) throw error; // last attempt failed
+        await new Promise(resolve => setTimeout(resolve, 2000)); // wait 2 sec
+      }
+    }
 
     const data = await res.json();
     typing.remove();
@@ -52,21 +70,12 @@ async function send() {
   }
 }
 
-
-
 function handleEnter(e) {
   if (e.key === "Enter") {
     send();
   }
 }
 
-
 function formatReply(text) {
   return marked.parse(text);
 }
-
-
-
-
-
-

@@ -86,6 +86,9 @@ IMPORTANT IMAGE RULE:
 - Never say you cannot share images.
 - Always use the provided Google Drive image links if available.
 - Do not redirect to Amazon if direct image link exists.
+- If user asks for price, ONLY share the price list link.
+- Do NOT share sales contact unless user specifically asks for sales number or state contact.
+
 
 
 
@@ -143,15 +146,15 @@ https://www.amazon.in/Mechnova-208cc-Power-Tiller-Solid/dp/B0GFX7BWVC
 
 Product Image:
 
-Brushcutter	-(Model-MBC37SC)- 1.35 HP : https://drive.google.com/uc?export=view&id=1j9moRzxVKdItvl-tHW4UQy_EE54HQKfu
-Brushcutter	-(Model- MBC37SBC)-1.35 HP: https://drive.google.com/uc?export=view&id=1DIIq8HawHxTc21IgzfLivRmEsxMxrgNZ
-Gasoline Water Pump	-(Model-MWP1.5X1.5SA)- 4 HP: https://drive.google.com/uc?export=view&id=1iPeU7200AI_9FlHkym9eKIc8NB9hfDbb
-Gasoline Water Pump	-(Model-MWP3X3SA)- 7 HP: https://drive.google.com/uc?export=view&id=1Eo7CefcAt3gr-bqBBIQJBpn6G9sLPnFt
-Gasoline Chainsaw	-(Model MCS58A-22SN)- 3.2 HP: https://drive.google.com/uc?export=view&id=1myWhn3-GSz6dGMD0cY-JhG2AK6jOAZcc
-Gasoline Engine	-(Model-ME30A)- 4 HP: https://drive.google.com/uc?export=view&id=1nlZl4pDkN2WOumUisFmkbCENCPRdZf0E
-Gasoline Engine	-(Model-ME70A)- 7 HP: https://drive.google.com/uc?export=view&id=1_L_4va9Jv-47pbUnJQHH-MsKWhE3gLBt
-Power Weeder	-(Model-MT900GA-208CC)- 7 HP: https://drive.google.com/uc?export=view&id=1Isfe7-wQXpVsgl0PubDejlrUX63DEpjs
-Power Weeder- (Model-MT900GA1-208CC)- 7 HP: https://drive.google.com/uc?export=view&id=1MzzQi0CCHx0FIBUdnBCa87-xoQzwmHBm
+Brushcutter	-(Model-MBC37SC)- 1.35 HP : https://drive.google.com/file/d/1j9moRzxVKdItvl-tHW4UQy_EE54HQKfu/view?usp=sharing
+Brushcutter	-(Model- MBC37SBC)-1.35 HP: https://drive.google.com/file/d/1DIIq8HawHxTc21IgzfLivRmEsxMxrgNZ/view?usp=drive_link
+Gasoline Water Pump	-(Model-MWP1.5X1.5SA)- 4 HP: https://drive.google.com/file/d/1iPeU7200AI_9FlHkym9eKIc8NB9hfDbb/view?usp=drive_link
+Gasoline Water Pump	-(Model-MWP3X3SA)- 7 HP: https://drive.google.com/file/d/1Eo7CefcAt3gr-bqBBIQJBpn6G9sLPnFt/view?usp=drive_link
+Gasoline Chainsaw	-(Model MCS58A-22SN)- 3.2 HP: https://drive.google.com/file/d/1myWhn3-GSz6dGMD0cY-JhG2AK6jOAZcc/view?usp=drive_link
+Gasoline Engine	-(Model-ME30A)- 4 HP: https://drive.google.com/file/d/1nlZl4pDkN2WOumUisFmkbCENCPRdZf0E/view?usp=drive_link
+Gasoline Engine	-(Model-ME70A)- 7 HP: https://drive.google.com/file/d/1_L_4va9Jv-47pbUnJQHH-MsKWhE3gLBt/view?usp=sharing
+Power Weeder	-(Model-MT900GA-208CC)- 7 HP: https://drive.google.com/file/d/1Isfe7-wQXpVsgl0PubDejlrUX63DEpjs/view?usp=drive_link
+Power Weeder- (Model-MT900GA1-208CC)- 7 HP: https://drive.google.com/file/d/1MzzQi0CCHx0FIBUdnBCa87-xoQzwmHBm/view?usp=drive_link
 
 
 

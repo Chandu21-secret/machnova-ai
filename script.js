@@ -63,20 +63,17 @@ function handleEnter(e) {
 
 function formatReply(text) {
 
-  // Remove any unwanted HTML tags
-  text = text.replace(/<[^>]*>/g, "");
+  // Convert markdown bold **text** to HTML bold
+  text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 
   const urlRegex = /(https?:\/\/[^\s]+)/g;
 
   return text.replace(urlRegex, (url) => {
-
-    // Always return clickable link (no image rendering)
     return `<a href="${url}" target="_blank" style="color:#2575fc; font-weight:600; word-break:break-all;">
               ${url}
             </a>`;
   });
 }
-
 
 
 

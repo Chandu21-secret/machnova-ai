@@ -78,6 +78,7 @@ RESPONSE FORMAT STRICT RULE:
 - Do not add closing sentences like "Let me know".
 
 
+
 IMPORTANT IMAGE RULE:
 
 - You ARE allowed to share product image links from company knowledge.

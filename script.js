@@ -62,14 +62,7 @@ function handleEnter(e) {
 
 
 function formatReply(text) {
-
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
-
-  return text.replace(urlRegex, (url) => {
-    return `<a href="${url}" target="_blank" style="color:#2575fc; font-weight:600; word-break:break-all;">
-              ${url}
-            </a>`;
-  });
+  return marked.parse(text);
 }
 
 

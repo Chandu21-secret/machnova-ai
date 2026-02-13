@@ -201,12 +201,7 @@ State- Tamilnadu
 
     let aiReply = completion.choices[0].message.content;
 
-    // Save assistant reply in memory
-       userSessions[userId].push({
-       role: "assistant",
-       content: aiReply
-    });
-
+    
 
 // Auto bold only model codes
     aiReply = aiReply.replace(

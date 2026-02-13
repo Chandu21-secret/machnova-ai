@@ -52,7 +52,7 @@ app.post("/chat", async (req, res) => {
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
-      temperature: 0.4,
+      temperature: 0.3,
       max_tokens: 500,
       messages: [
         {
@@ -79,6 +79,13 @@ IMPORTANT IMAGE RULE:
 - Always use the provided Google Drive image links if available.
 - Do not redirect to Amazon if direct image link exists.
 
+RESPONSE STYLE RULE:
+
+- Keep answers short and crisp.
+- If user asks only for models, list only model names.
+- Do not give long explanations unless user asks.
+- Use bullet points when listing products.
+- Maximum 4–5 lines in normal replies.
 
 
 Instructions:

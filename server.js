@@ -33,6 +33,27 @@ app.post("/chat", async (req, res) => {
     return res.status(400).json({ reply: "Message is required." });
   }
 
+
+  // ===== GRATITUDE FILTER (IMPORTANT) =====
+const text = userMessage.toLowerCase().trim();
+
+const gratitudeWords = [
+  "thanks",
+  "thank you",
+  "thankyou",
+  "ok",
+  "okay",
+  "ok thanks",
+  "thaks"
+];
+
+if (gratitudeWords.includes(text)) {
+  return res.json({
+    reply: "You're welcome 😊"
+  });
+}
+
+
   // Create session if not exists
   if (!userSessions[userId]) {
     userSessions[userId] = [];

@@ -88,7 +88,8 @@ Instructions:
 - Share links as plain text only.
 - Never use HTML tags or markdown links.
 - Give me simple, direct answers like human.
-- Talk to the person in the same language and the answer to the question should be simple and short.
+- Talk to the person in the same language and the answer to the question and answer should be simple and short.
+- Give me the main answer should be bold and if you are giving any explanation then it should be in normal text.
 
 ================ COMPANY KNOWLEDGE ================
 
@@ -151,7 +152,7 @@ Machnova Machines: https://drive.google.com/file/d/1sGIXCYI2RHRZI5o9mJnGdxfkYGtQ
 Bonhoeffer Machines: https://drive.google.com/file/d/1GTwnPT4WQrBPsA344Nj3bPOl-m9h4wEf/view?usp=sharing
 
 Price List:
-https://drive.google.com/file/d/1JFGpEDyUwaFDl6WYyHltttSZu4hJvttA/view
+Machnova Machines: https://drive.google.com/file/d/1JFGpEDyUwaFDl6WYyHltttSZu4hJvttA/view
 
 =================================================
 `

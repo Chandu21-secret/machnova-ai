@@ -77,5 +77,17 @@ function handleEnter(e) {
 }
 
 function formatReply(text) {
-  return marked.parse(text);
+  const html = marked.parse(text);
+
+  // 🔥 All links open in new tab
+  const tempDiv = document.createElement("div");
+  tempDiv.innerHTML = html;
+
+  const links = tempDiv.querySelectorAll("a");
+  links.forEach(link => {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+  });
+
+  return tempDiv.innerHTML;
 }

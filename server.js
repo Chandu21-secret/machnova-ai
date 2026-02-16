@@ -71,14 +71,16 @@ if (gratitudeWords.includes(text)) {
   }
 
   try {
-    const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      temperature: 0.3,
-      max_tokens: 500,
-      messages: [
-        {
-          role: "system",
-          content: `
+    const lastMessages = userSessions[userId].slice(-2);
+
+const completion = await openai.chat.completions.create({
+  model: "gpt-4o-mini",
+  temperature: 0.3,
+  max_tokens: 500,
+  messages: [
+    {
+      role: "system",
+      content: `
 You are an intelligent AI assistant for Machnova Machines.
 You behave like a real human sales & support executive.
 

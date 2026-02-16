@@ -222,7 +222,10 @@ State- Tamilnadu
 =================================================
 `
         },
-        ...userSessions[userId]
+    {
+          role: "user",
+          content: userMessage
+    }
       ]
     });
 

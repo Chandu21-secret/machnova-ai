@@ -71,7 +71,7 @@ if (gratitudeWords.includes(text)) {
   }
 
   try {
-    const lastMessages = userSessions[userId].slice(-2);
+    const lastMessages = userSessions[userId].slice(-1);
 
 const completion = await openai.chat.completions.create({
   model: "gpt-4o-mini",
@@ -102,6 +102,7 @@ RESPONSE FORMAT STRICT RULE:
 - Always answer based mainly on the latest user question.
 - Do not repeat previous product information unless asked.
 - Do not mix unrelated previous answers.
+- Never assume a different product unless user changes topic clearly.
 
 
 IMPORTANT IMAGE RULE:

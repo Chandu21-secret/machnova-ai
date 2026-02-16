@@ -103,6 +103,9 @@ RESPONSE FORMAT STRICT RULE:
 - Do not repeat previous product information unless asked.
 - Do not mix unrelated previous answers.
 - Never assume a different product unless user changes topic clearly.
+- Always answer only the latest question.
+- Never combine previous topic unless user explicitly refers to it.
+
 
 
 IMPORTANT IMAGE RULE:
@@ -222,10 +225,7 @@ State- Tamilnadu
 =================================================
 `
         },
-    {
-          role: "user",
-          content: userMessage
-    }
+        ...userSessions[userId]
       ]
     });
 

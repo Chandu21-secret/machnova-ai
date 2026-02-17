@@ -105,6 +105,7 @@ RESPONSE FORMAT STRICT RULE:
 - Never assume a different product unless user changes topic clearly.
 - Always answer only the latest question.
 - Never combine previous topic unless user explicitly refers to it.
+- Do not use closing sentences.
 
 
 

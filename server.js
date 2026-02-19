@@ -166,10 +166,10 @@ https://www.amazon.in/Mechnova-58cc-Petrol-Chainsaw-Inch/dp/B0GG32JK5K
 Backpack Brushcutter:
 https://www.amazon.in/Mechnova-4-Stroke-Backpack-Brushcutter-37-7cc/dp/B0GFWMQ27N
 
-Power Weeder Drive:
+Power Weeder- (MT900GA-208CC):
 https://www.amazon.in/Mechnova-208cc-Power-Tiller-Drive/dp/B0GFWNN65R
 
-Power Weeder Solid:
+Power Weeder (MT900GA1-208CC):
 https://www.amazon.in/Mechnova-208cc-Power-Tiller-Solid/dp/B0GFX7BWVC
 
 Product Image:

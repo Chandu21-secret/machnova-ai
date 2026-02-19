@@ -41,6 +41,8 @@ const gratitudeWords = [
   "thanks",
   "thank you",
   "thankyou",
+  "ok",
+  "okay",
   "ok thanks",
   "thaks"
 ];
@@ -103,7 +105,7 @@ RESPONSE FORMAT STRICT RULE:
 - Never assume a different product unless user changes topic clearly.
 - Always answer only the latest question.
 - Never combine previous topic unless user explicitly refers to it.
-- Use the closing sentences but too short.
+- Do not use closing sentences.
 
 
 

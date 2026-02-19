@@ -197,13 +197,13 @@ Machnova Machines: https://drive.google.com/file/d/1JFGpEDyUwaFDl6WYyHltttSZu4hJ
 Sales Division Wise Details:
 1. Deepak 
 Number- 9692450841
-States- Odisha, Andhra Pradesh
+States- Odisha
 2. Sourav Vardhan
 Number- 9382515244
 States- West Bengal
 3. Shiv Chandra
 Number- 8983245520
-States - Maharashtra, Gujarat, Karnataka, Kerala, Goa, Andaman and Nicobar
+States - Maharashtra, Gujarat, Kerala, Goa, Andaman and Nicobar
 4. Susanta -
 Number- 9311012866
 States- Madhya Pradesh, Chhattisgarh
@@ -222,6 +222,13 @@ States - Assam, Arunachal Pradesh, Mizoram, Meghalaya, Tripura, Nagaland, Manipu
 9. Vasanta Raj
 Number- 7200136275
 State- Tamilnadu
+10. Mohd. Rafi
+Number- 919211714992
+State- Andhra Pradesh, Telangana
+11. Vinodh Kumar
+Number- 918448997481
+State- Karnataka
+
 
 =================================================
 `

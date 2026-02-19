@@ -41,8 +41,6 @@ const gratitudeWords = [
   "thanks",
   "thank you",
   "thankyou",
-  "ok",
-  "okay",
   "ok thanks",
   "thaks"
 ];

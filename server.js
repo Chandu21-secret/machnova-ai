@@ -34,24 +34,7 @@ app.post("/chat", async (req, res) => {
   }
 
 
-  // ===== GRATITUDE FILTER (IMPORTANT) =====
-const text = userMessage.toLowerCase().trim();
-
-const gratitudeWords = [
-  "thanks",
-  "thank you",
-  "thankyou",
-  "ok",
-  "okay",
-  "ok thanks",
-  "thaks"
-];
-
-if (gratitudeWords.includes(text)) {
-  return res.json({
-    reply: "You're welcome 😊"
-  });
-}
+  
 
 
   // Create session if not exists

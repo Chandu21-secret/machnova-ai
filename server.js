@@ -212,7 +212,7 @@ Number- 95960065576
 States - Jammu and Kashmir, Ladakh
 6. Manoj
 Number- 97580742210
-States - Haryana, Rajasthan, Delhi NCR, Himachal Pradesh, Uttarakhand, Uttar Pradesh
+States - Haryana, Delhi NCR, Himachal Pradesh, Uttarakhand, Uttar Pradesh
 7. Anil
 Number- 9211344242
 States - Bihar, Jharkhand,

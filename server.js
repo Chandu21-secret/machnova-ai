@@ -34,7 +34,24 @@ app.post("/chat", async (req, res) => {
   }
 
 
-  
+  // ===== GRATITUDE FILTER (IMPORTANT) =====
+const text = userMessage.toLowerCase().trim();
+
+const gratitudeWords = [
+  "thanks",
+  "thank you",
+  "thankyou",
+  "ok",
+  "okay",
+  "ok thanks",
+  "thaks"
+];
+
+if (gratitudeWords.includes(text)) {
+  return res.json({
+    reply: "You're welcome 😊"
+  });
+}
 
 
   // Create session if not exists
@@ -88,6 +105,7 @@ RESPONSE FORMAT STRICT RULE:
 - Never assume a different product unless user changes topic clearly.
 - Always answer only the latest question.
 - Never combine previous topic unless user explicitly refers to it.
+- Do not use closing sentences.
 
 
 
@@ -194,7 +212,7 @@ Number- 95960065576
 States - Jammu and Kashmir, Ladakh
 6. Manoj
 Number- 97580742210
-States - Haryana, Delhi NCR, Himachal Pradesh, Uttarakhand, Uttar Pradesh
+States - Haryana, Rajasthan, Delhi NCR, Himachal Pradesh, Uttarakhand, Uttar Pradesh
 7. Anil
 Number- 9211344242
 States - Bihar, Jharkhand,

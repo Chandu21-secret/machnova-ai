@@ -88,7 +88,6 @@ RESPONSE FORMAT STRICT RULE:
 - Never assume a different product unless user changes topic clearly.
 - Always answer only the latest question.
 - Never combine previous topic unless user explicitly refers to it.
-- Do not use closing sentences.
 
 
 
@@ -195,7 +194,7 @@ Number- 95960065576
 States - Jammu and Kashmir, Ladakh
 6. Manoj
 Number- 97580742210
-States - Haryana, Rajasthan, Delhi NCR, Himachal Pradesh, Uttarakhand, Uttar Pradesh
+States - Haryana, Delhi NCR, Himachal Pradesh, Uttarakhand, Uttar Pradesh
 7. Anil
 Number- 9211344242
 States - Bihar, Jharkhand,
@@ -211,6 +210,9 @@ State- Andhra Pradesh, Telangana
 11. Vinodh Kumar
 Number- 918448997481
 State- Karnataka
+12. Mr. Satish Jangid
+Number- 919001446507
+State- Rajasthan
 
 
 =================================================

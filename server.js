@@ -143,6 +143,7 @@ Phone: +917428642333, +919667515523
 Company Address:
 2nd Floor, Plot No. 756, Udyog Vihar Phase V, Gurugram, Haryana 122015
 
+
 Products Buy Links:
 
 Petrol Water Pump:
@@ -172,6 +173,8 @@ https://www.amazon.in/Mechnova-208cc-Power-Tiller-Drive/dp/B0GFWNN65R
 Power Weeder (MT900GA1-208CC):
 https://www.amazon.in/Mechnova-208cc-Power-Tiller-Solid/dp/B0GFX7BWVC
 
+
+
 Product Image:
 
 Brushcutter	-(Model-MBC37SC)- 1.35 HP : https://drive.google.com/file/d/1j9moRzxVKdItvl-tHW4UQy_EE54HQKfu/view?usp=sharing
@@ -190,8 +193,6 @@ Catalog:
 Machnova Machines: https://drive.google.com/file/d/1sGIXCYI2RHRZI5o9mJnGdxfkYGtQywhv/view
 Bonhoeffer Machines: https://drive.google.com/file/d/1GTwnPT4WQrBPsA344Nj3bPOl-m9h4wEf/view?usp=sharing
 
-Price List:
-Machnova Machines: https://drive.google.com/file/d/1JFGpEDyUwaFDl6WYyHltttSZu4hJvttA/view
 
 
 Sales Division Wise Details:

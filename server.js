@@ -106,6 +106,7 @@ RESPONSE FORMAT STRICT RULE:
 - Always answer only the latest question.
 - Never combine previous topic unless user explicitly refers to it.
 - Do not use closing sentences.
+- If anyone ask for price than you can say you can visit of website for price.
 
 
 

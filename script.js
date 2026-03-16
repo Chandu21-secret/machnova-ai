@@ -6,6 +6,7 @@ function toggleChat() {
 }
 
 async function send() {
+  
   const input = document.getElementById("msg");
   const messages = document.getElementById("messages");
 

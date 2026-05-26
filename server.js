@@ -260,6 +260,8 @@ State- Rajasthan
 
   } catch (error) {
   console.error("FULL AI ERROR:", error);
+  console.error("ERROR MESSAGE:", error.message);
+  console.error("ERROR DETAILS:", error);
 
   res.status(200).json({
     reply: "Server is temporarily busy. Please try again."

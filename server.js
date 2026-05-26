@@ -205,7 +205,7 @@ Number- 9382515244
 States- West Bengal
 3. Shiv Chandra
 Number- 8983245520
-States - Maharashtra, Gujarat, Kerala, Goa, Andaman and Nicobar
+States - Maharashtra, Gujarat, Kerala, Goa, Andaman and Nicobar 
 4. Susanta -
 Number- 9311012866
 States- Madhya Pradesh, Chhattisgarh

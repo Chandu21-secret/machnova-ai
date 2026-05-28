@@ -300,9 +300,14 @@ app.post("/whatsapp", async (req, res) => {
 
     const twilio = require("twilio");
 
+    console.log("SID:", process.env.TWILIO_ACCOUNT_SID);
+    console.log("TOKEN:", process.env.TWILIO_AUTH_TOKEN);
+    
     const client = twilio(
+      
       process.env.TWILIO_ACCOUNT_SID,
       process.env.TWILIO_AUTH_TOKEN
+      
     );
 
     await client.messages.create({

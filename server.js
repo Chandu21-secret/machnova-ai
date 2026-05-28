@@ -8,6 +8,7 @@ dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname));
 
 // ================= MEMORY STORAGE =================
@@ -271,7 +272,58 @@ State- Rajasthan
 });
 
 // ================= START SERVER =================
+
+app.post("/whatsapp", async (req, res) => {
+
+  try {
+
+    const incomingMsg = req.body.Body;
+    const sender = req.body.From;
+
+    console.log("Message:", incomingMsg);
+
+    const completion = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: "You are Machnova AI assistant"
+        },
+        {
+          role: "user",
+          content: incomingMsg
+        }
+      ]
+    });
+
+    const aiReply = completion.choices[0].message.content;
+
+    const twilio = require("twilio");
+
+    const client = twilio(
+      process.env.TWILIO_ACCOUNT_SID,
+      process.env.TWILIO_AUTH_TOKEN
+    );
+
+    await client.messages.create({
+      from: process.env.TWILIO_WHATSAPP_NUMBER,
+      to: sender,
+      body: aiReply
+    });
+
+    res.sendStatus(200);
+
+  } catch (error) {
+
+    console.error("TWILIO ERROR:", error);
+
+    res.sendStatus(500);
+  }
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ AI Server running at http://localhost:${PORT}`);
 });
+
+
